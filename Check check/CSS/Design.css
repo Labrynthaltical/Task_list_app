@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    /* background-color : rgba(0, 0, 0, 0.897); */
+    /* color: rgb(255, 255, 255); */
+    font-size: 20px;
+    position: relative;
+  }
+  #add{ /* The adding button */
+    padding: 10px;
+    border: none;
+    width: 15%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  #add:hover{
+    background-color: #b4b4b4;
+  }
+   #adding{/*The input field*/
+    margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  }
+  h2{
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+  }
+li{
+list-style-type: none;
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 40px;
+list-style-type: none;
+background: #eee;
+font-size: 18px;
+transition: 0.2s;
+}
+ul{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    }
+.Header{
+    background-color: rgb(101, 202, 0);
+        padding: 30px 40px;
+        text-align: center;
+      }
+       .Header:after {/*To clear the float of the header*/
+        content: "";
+        display: table;
+        clear: both;
+      }
+.happy{ /* Button class */
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    border: none;
+    background-color: red;
+}
+/* paddin :bottom left   */
+.happy:hover{
+    background-color: #f44336;
+    color: white;
+}
+ .nonchecked:nth-child(odd){
+        background-color: rgba(119, 118, 118, 0.438);
+    }
+      .nonchecked:hover{
+        background-color: rgba(119, 118, 118, 0.589);
+        
+    }
+    .checked{
+        background-color: rgba(58, 58, 58, 0.589);
+        text-decoration: line-through;
+    }
