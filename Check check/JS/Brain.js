@@ -14,7 +14,7 @@ function adder(){
     alert("Please write something first") //Gives an alert if the user did not type something
  }
  else{
-  document.getElementById("list").appendChild(li); // hoists the li varieable onto the empty <li>
+  document.getElementById("list").appendChild(li); // hoists the li varieable onto the empty list
  }
   let node = document.createTextNode(text); //Creates a text node out of the value of the text input
     li.appendChild(node); //hoists the text node onto the created <li>
@@ -25,7 +25,7 @@ function adder(){
      li.appendChild(car)//Hoists the delete button onto the li varieable
     car.classList.add("happy")
     car.onclick = function (){
-      li.style.display = ("none")
+      li.remove(li)
     }
  plus.value = ""//Clears the input field to type another task
 li.addEventListener("click",sav)
@@ -33,5 +33,7 @@ function sav(){
   li.classList.toggle("nonchecked")
   li.classList.toggle("checked")
 // This function toggles between the classes (nonchecked/checked)
+//  li.classList.add(atask)
+
 }
 }
